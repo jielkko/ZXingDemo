@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="animTranslate">
+        <item name="android:windowEnterAnimation">@anim/scan_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/scan_translate_out</item>
+    </style>
+
+    <!-- 主题样式. -->
+    <style name="ScanAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+
+</resources>

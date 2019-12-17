@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="radio">
+        <!--标题-->
+        <attr name="mRadioTitle" format="string" />
+        <!--颜色-->
+        <attr name="mRadioColor" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="customer">
+        <!--左图标-->
+        <attr name="mInputLeftIcon" format="integer"/>
+        <!--右图标-->
+        <attr name="mInputRightIcon" format="integer"/>
+        <!--标题-->
+        <attr name="mTitle" format="string"/>
+        <!--是否显示 true 可以  false  不可以-->
+        <attr name="mIsTitleShow" format="boolean"/>
+        <!--内容-->
+        <attr name="mContent" format="string"/>
+        <!--是否显示 true 可以  false  不可以-->
+        <attr name="mIsContentShow" format="boolean"/>
+        <!--内容颜色-->
+        <attr name="mContentColor" format="string"/>
+        <!--提示-->
+        <attr name="mHint" format="string"/>
+        <!--是否编辑 true 可以  false  不可以-->
+        <attr name="mIsEnabled" format="boolean"/>
+        <!--是否必选 true 必选  false  可选-->
+        <attr name="mIsRequired" format="boolean"/>
+        <!--是否点击 true 可以  false  不可以-->
+        <attr name="mIsClick" format="boolean"/>
+        <!--是否单选 true 单选  false  多选-->
+        <attr name="mIsSingle" format="boolean"/>
+        <!--输入框类型-->
+        <attr name="mInputType" format="string"/>
+        <!--开始时间-->
+        <attr name="mStartDate" format="string"/>
+        <!--结束时间-->
+        <attr name="mEndDate" format="string"/>
+        <!--是否默认值 true 可以  false  不可以-->
+        <attr name="mIsDefultVuale" format="boolean"/>
+        <!--最大长度-->
+        <attr name="mMaxLength" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="itemVisibleNum" format="integer"/>
+
+        <attr name="textColorOuter" format="color" />
+        <attr name="textSizeOuter" format="dimension" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="textSizeCenter" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+
+        <attr name="isLoop" format="boolean"/>
+        <attr name="lineSpaceingDimens" format="dimension"/>
+
+        <attr name="wheelGravity" format="enum" >
+            <enum name="left" value="234"/>
+            <enum name="center" value="354"/>
+            <enum name="right" value="894"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

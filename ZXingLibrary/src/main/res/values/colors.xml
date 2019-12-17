@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="toolbar_title">#ffffff</color>
+    <color name="bottom_navigation">#fcfcfc</color>
+
+    <color name="list_title">#333333</color>
+    <color name="list_subtitle">#999999</color>
+
+    <color name="colorAccent1">#409efe</color>
+
+    <color name="colorAccent">#408bfe</color>
+    <color name="colorPrimary">#408bfe</color>
+    <color name="colorPrimaryDark">#408bfe</color>
+    <color name="common_bg">#f1f1f1</color>
+    <color name="common_black">#000000</color>
+    <color name="common_blue">#408bfe</color>
+    <color name="common_green">#a0e759</color>
+    <color name="common_green2">#45c800</color>
+    <color name="common_blue_dark">#0288d1</color>
+    <color name="common_blue_light">#039be5</color>
+    <color name="common_disable">#d9d9d9</color>
+    <color name="common_divider">#d4d4d4</color>
+    <color name="common_gray">#d4d4d4</color>
+    <color name="common_purple">#d500f9</color>
+    <color name="common_red">#fa4a32</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_yellow">#F9BF55</color>
+
+    <color name="text_dark">#999999</color>
+    <color name="text_light_dark">#333333</color>
+    <color name="text_normal">#666666</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="split_line">#11112233</color>
+    <color name="text1">#4d4d4d</color>
+    <color name="text2">#333333</color>
+
+    <color name="colorHint">#C0C0C0</color>
+    <color name="line">#ededed</color>
+    <color name="tabColorNormal">#333333</color>
+    <color name="tabColorSelected">@color/colorPrimary</color>
+    <color name="tabColorBageBg">#e73131</color>
+
+    <!--下方弹出选择-->
+    <color name="select_text1">#4d4d4d</color>
+    <color name="select_text2">#333333</color>
+
+</resources>

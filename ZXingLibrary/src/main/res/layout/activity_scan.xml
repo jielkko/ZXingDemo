@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <com.hjl.zxinglibrary.ZXingView
+        android:id="@+id/zxing_view"
+        style="@style/MatchMatch"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="请对准条码/二维码"
+        app:qrcv_barcodeRectHeight="120dp"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#ffffff"
+        app:qrcv_cornerDisplayType="center"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="2dp"
+        app:qrcv_isAutoZoom="true"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="请对准条码/二维码"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="#408bfe"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_toolbarHeight="56dp"
+        app:qrcv_topOffset="120dp"
+        app:qrcv_verticalBias="-1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/mytoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:paddingLeft="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/scan_back" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="扫描条码/二维码"
+                android:textColor="@color/common_white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="2"
+                android:gravity="center|right"
+                android:paddingRight="16dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="切换扫描"
+                    android:textColor="@color/common_white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/scan_hint"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/btn_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_code_input" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="切换为手动输入"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_open_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_open_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="打开手电"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_close_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_open_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="关闭手电"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
