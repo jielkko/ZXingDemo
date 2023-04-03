@@ -31,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //资产扫码
-                Intent i = new Intent(MainActivity.this, ScanActivity.class);
-                startActivityForResult(i, ZxingResultCode.scan);
+                Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+                //intent.putExtra("type", "all");
+                intent.putExtra("type", "one");
+//                intent.putExtra("type", "two");
+                startActivityForResult(intent, ZxingResultCode.scan);
 
             }
         });

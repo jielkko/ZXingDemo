@@ -64,11 +64,15 @@ public class ScanActivity extends AppCompatActivity {
     private String defultCode = "010120190100001";
 
 
+    String type = "all"; //all one two
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
+
+        Intent intent = this.getIntent();
+        type = intent.getStringExtra("type");
 
         mContext = this;
 
@@ -194,9 +198,18 @@ public class ScanActivity extends AppCompatActivity {
         hintMap.put(DecodeHintType.POSSIBLE_FORMATS, formatList); // 可能的编码格式
         hintMap.put(DecodeHintType.TRY_HARDER, Boolean.TRUE); // 花更多的时间用于寻找图上的编码，优化准确性，但不优化速度
         hintMap.put(DecodeHintType.CHARACTER_SET, "utf-8"); // 编码字符集
-        //mZxingView.setType(BarcodeType.ALL, hintMap); // 自定义识别的类型
 
-        mZxingView.setType(BarcodeType.TWO_DIMENSION, hintMap); // 自定义识别的类型
+        if(type.equals("all")){
+            mZxingView.setType(BarcodeType.ALL, hintMap); // 自定义识别的类型
+        }else if (type.equals("one")){
+            mZxingView.setType(BarcodeType.ONE_DIMENSION, hintMap); // 自定义识别的类型
+        }else if (type.equals("tw0")){
+            mZxingView.setType(BarcodeType.TWO_DIMENSION, hintMap); // 自定义识别的类型
+        }else{
+            mZxingView.setType(BarcodeType.ALL, hintMap); // 自定义识别的类型
+        }
+
+        //mZxingView.setType(BarcodeType.TWO_DIMENSION, hintMap); // 自定义识别的类型
         mZxingView.startSpotAndShowRect(); // 显示扫描框，并开始识别
     }
 
